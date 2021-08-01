@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span class="main-title">spli</span><span class="main-title">tter</span>
+      </h1>
+    </header>
+    <main class="container">
+      <section class="tip-calc">
+        <article class="bill">
+          <h3>bill</h3>
+          <input type="text" value="0" class="input" />
+        </article>
+        <article class="tip">
+          <h3>select Tip %</h3>
+          <div class="btn-cont">
+            <button type="button">5%</button>
+            <button type="button">10%</button>
+            <button type="button">15%</button>
+            <button type="button">25%</button>
+            <button type="button">50%</button>
+            <input type="text" class="custom input" value="Custom" />
+          </div>
+        </article>
+        <article class="people">
+          <h3>number of people</h3>
+          <input type="text" value="0" class="input" />
+        </article>
+      </section>
+      <section class="tip-display">
+        <article class="display-amount">
+          <h3>tip amount</h3>
+          <p class="per-person">/ person</p>
+          <p class="tip"></p>
+        </article>
+        <article class="display-amount">
+          <h3>total</h3>
+          <p class="per-person">/ person</p>
+          <p class="total"></p>
+        </article>
+        <button type="button" class="reset-btn">reset</button>
+      </section>
+    </main>
+    <footer class="attribution">
+      <span>Challenge by </span>
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor.
+      </a>
+      <span> Coded by </span
+      ><a href="https://github.com/Manuel254">Immanuel Kituku.</a>
+    </footer>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

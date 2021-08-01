@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: hsl(172, 67%, 45%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --lighter-dark-grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --lighter-grayish-cyan: hsl(189, 41%, 97%);
+
+  /* font size */
+  --font-size: 24px;
+
+  /* Font family */
+  --font: "Space Mono", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--light-grayish-cyan);
+  font-size: var(--font-size);
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: var(--very-dark-cyan);
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+.main-title {
+  display: block;
+}
+
+h3 {
+  font-size: 0.6em;
+  text-transform: capitalize;
+  margin: 0.7em 0;
+}
+
+.tip-calc h3 {
+  color: var(--dark-grayish-cyan);
+}
+
+.tip-display h3 {
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.input {
+  border-radius: 5px;
+  padding: 1em;
+  border: none;
+  background-color: var(--lighter-grayish-cyan);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btn-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reset-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--very-dark-cyan);
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+button,
+.custom {
+  text-align: center;
+  padding: 0.5em 3em;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  border: none;
+  font-size: var(--font-size);
+  font-weight: 700;
+  font-family: var(--font);
+  width: 40%;
+  margin: 0.5em 0;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--very-dark-cyan);
+}
+
+.custom {
+  background-color: var(--lighter-grayish-cyan);
+  color: var(--dark-grayish-cyan);
+  padding: 0.5em 1em;
+}
+
+.tip-display {
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 1em;
+  margin: 1.5em 0;
+}
