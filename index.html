@@ -22,34 +22,45 @@
       <section class="tip-calc">
         <article class="bill">
           <h3>bill</h3>
-          <input type="text" value="0" class="input" />
+          <div class="bill-input">
+            <img src="./images/icon-dollar.svg" alt="dollar icon" />
+            <input id="bill-input" type="text" value="0" class="input" />
+          </div>
         </article>
         <article class="tip">
           <h3>select Tip %</h3>
           <div class="btn-cont">
-            <button type="button">5%</button>
-            <button type="button">10%</button>
-            <button type="button">15%</button>
-            <button type="button">25%</button>
-            <button type="button">50%</button>
-            <input type="text" class="custom input" value="Custom" />
+            <button id="btn-5" type="button">5%</button>
+            <button id="btn-10" type="button">10%</button>
+            <button id="btn-15" type="button">15%</button>
+            <button id="btn-25" type="button">25%</button>
+            <button id="btn-50" type="button">50%</button>
+            <input
+              id="custom"
+              type="text"
+              class="custom input"
+              value="Custom"
+            />
           </div>
         </article>
         <article class="people">
           <h3>number of people</h3>
-          <input type="text" value="0" class="input" />
+          <div class="people-input">
+            <img src="./images/icon-person.svg" alt="person icon" />
+            <input type="text" value="0" class="input" id="people-input" />
+          </div>
         </article>
       </section>
       <section class="tip-display">
         <article class="display-amount">
           <h3>tip amount</h3>
           <p class="per-person">/ person</p>
-          <p class="tip"></p>
+          <p class="tip-amount"></p>
         </article>
         <article class="display-amount">
           <h3>total</h3>
           <p class="per-person">/ person</p>
-          <p class="total"></p>
+          <p class="total-amount"></p>
         </article>
         <button type="button" class="reset-btn">reset</button>
       </section>
